@@ -3,3 +3,28 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* vw는 레이아웃 맞추기가 어려워서 사용 지양 */
+
+/* 공통 스타일 */
+body {
+  background-color: var(--primary-color);
+}
+
+@media (min-width: 320px) and (max-width: 798px){
+  body{
+    background-color: var(--blue);
+  }
+}
+
+/* 중단점 - 769px 이상 */
+@media (min-width: 769px){
+  body{
+    background-color: var(--green);
+  }
+}
+
+.book__cover {
+  width: 30%;
+  background-color: pink;
+}
