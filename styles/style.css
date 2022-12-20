@@ -219,6 +219,7 @@ input[type="search"] {
   grid-area: board;
   display: flex;
   flex-flow: row wrap;
+  overflow: hidden;
 }
 
 .board__title {
@@ -231,6 +232,7 @@ input[type="search"] {
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .board__item {
@@ -240,7 +242,7 @@ input[type="search"] {
 
 .board__link {
   flex: 0 1 auto;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: pink;
