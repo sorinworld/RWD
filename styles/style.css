@@ -239,15 +239,20 @@ input[type="search"] {
 }
 
 .board__link {
-  flex: 1 1 auto;
-  white-space: nowrap;
+  flex: 0 1 auto;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: pink;
+  width: calc(100% - 6.25em);
 }
 
+/* 원래는 inline이지만 flex 되면서 블록 성격을 띔 */
 .board__date {
   flex: 0 0 auto;
-
+  width: 6.25em;
+  text-align: right;
+  background-color: skyblue;
 }
 
 .board__more {
