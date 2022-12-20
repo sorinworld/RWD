@@ -396,6 +396,17 @@ input[type="search"] {
                        "favorite"
                        "twitter";
   }
+  /* 모바일 인기 사이트 */
+  .favorite {
+    margin-top: var(--spacing-sm);
+  }
+
+  .favorite__link::after {
+    content: attr(data-tooltip);
+    margin-left: var(--spacing-xs);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+  }
 }
 
 
