@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.group1 .box {
+  background: gold;
+}
+.group2 .box {
+  background: pink;
+}
+.group3 .box {
+  background: lightgreen;
+}
+.group4 .box {
+  background: skyblue;
+}
+.group5 .box {
+  background: salmon;
+}
+.group6 .box {
+  background: violet;
+}
+.group7 .box {
+  background: aquamarine;
+}
+.group8 .box {
+  background: lightseagreen;
+}
+.group9 .box {
+  background: mediumpurple;
+}
+.group10 .box {
+  background: midnightblue;
+}
+.group11 .box {
+  background: olive;
+}
+.group12 .box {
+  background: sandybrown;
+}
+
+/* all device */
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 12px;
+  /* gap은 column이랑 row가 있음 */
+  /* row-gap: 24px; */
+}
+
+/* flex에서는 마진병합이 일어나지 않음 */
+div[class^="group"]{
+  width: 100%;
+  margin: 0px;
+}
+
+.box{
+  margin: 12px;
+  height: 150px;
+}
+
+/* more than 768 */
+@media (min-width: 768px){
+  div[class^="group"]{
+    width: 25%;
+  }
+}
+
+div.group2 {
+  order: 1;
+}
+
+div.group1 {
+  width: 75%;
+}
+/* more than 1280 */
+@media (min-width: 1280px){
+  div[class^="group"]{
+    width: 25%;
+  }
+}
