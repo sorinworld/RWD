@@ -40,20 +40,27 @@ video {
   height: 0 !important; */
 }
 
-.iframeRatio-16-9 {
-  aspect-ratio: 16/9;
-  /* padding-top: 56.25%; */
-}
-
 .iframeRatio-21-9 {
   aspect-ratio: 21/9;
   /* padding-top: 42.857%; */
 }
 
+.iframeRatio-16-9 {
+  aspect-ratio: 16/9;
+  /* padding-top: 56.25%; */
+}
+
+
 .iframeRatio-4-3 {
   aspect-ratio: 4/3;
   /* padding-top: 75%; */
 }
+
+.iframeRatio-1-1 {
+  aspect-ratio: 1/1;
+  /* padding-top: 75%; */
+}
+
 
 .iframeWrapper iframe {
   /* position: absolute;
